@@ -1,0 +1,143 @@
+/* Configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f8fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #004080, #1e90ff);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.cta-button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffa500;
+  transform: scale(1.05);
+}
+
+/* Gradiente e efeitos nas seções */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+.gradient-background {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: white;
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+/* Cards de Serviço */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+/* Clientes */
+.client-logos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.client-logos img {
+  width: 100px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-logos img:hover {
+  filter: grayscale(0%);
+}
+
+/* Estatísticas */
+.results-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #004080;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #333;
+}
