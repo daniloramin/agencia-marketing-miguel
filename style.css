@@ -14,7 +14,7 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, #004080, #1e90ff);
+  background: linear-gradient(135deg, #fec600, #ffe27a);
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -34,8 +34,8 @@ body {
 }
 
 .cta-button {
-  background-color: #ff8c00;
-  color: white;
+  background-color: white;
+  color: #fec600;
   padding: 15px 30px;
   font-size: 1.1rem;
   border: none;
@@ -45,7 +45,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #ffa500;
+  background-color: black;
   transform: scale(1.05);
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .gradient-background {
-  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  background: linear-gradient(135deg, #fec600, #ffe27a);
   color: white;
   padding: 60px 20px;
 }
@@ -102,7 +102,7 @@ body {
 }
 
 .card h3 {
-  color: #1e90ff;
+  color: #fec600;
   margin-bottom: 10px;
 }
 
