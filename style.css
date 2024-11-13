@@ -1,6 +1,7 @@
 :root {
   --primary: #fec600;
   --secondary: #5b5b58;
+  --accent: #ffe27a;
 }
 
 /* Configurações globais */
@@ -18,9 +19,9 @@ body {
 }
 
 .primary-bg {
-  background: linear-gradient(135deg, #fec600, #ffe27a);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   color: white;
-  padding: 60px 20px;
+  padding: 100px 20px;
 }
 
 .primary-bg h2 {
@@ -28,9 +29,56 @@ body {
   text-align: center;
 }
 
+/* -- diagonal -- */
+.divider-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background-color: var(--primary);
+}
+
+.divider-bottom svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.divider-bottom .shape-fill {
+  fill: var(--secondary);
+}
+/* -- diagonal -- */
+
+/* -- curvas opacas -- */
+.curves-top {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curves-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.curves-top .shape-fill {
+  fill: var(--primary);
+}
+/* -- curvas opacas -- */
+
 /* -------- start -------- */
 #start {
-  background: linear-gradient(135deg, #fec600, #ffe27a);
+  background: linear-gradient(to top, var(--primary), var(--accent));
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -52,6 +100,18 @@ body {
 
 /* -------- start -------- */
 
+/* -------- about -------- */
+#about {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#about .content {
+  max-width: 900px;
+  margin: auto;
+}
+/* -------- about -------- */
+
 .cta-button {
   background-color: white;
   color: var(--secondary);
@@ -69,28 +129,27 @@ body {
   transform: scale(1.05);
 }
 
-/* Gradiente e efeitos nas seções */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
+/* -------- services -------- */
+#services {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+  /* background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.05)),
+    linear-gradient(to bottom, var(--primary), var(--accent));
+  background-size: 30px, 100%; */
 }
 
-.section:hover {
-  transform: scale(1.02);
+#divider-services-top {
+  background-color: var(--primary);
+  transform: rotate(0deg);
+  transform: rotateY(180deg);
 }
 
-.section h2 {
-  font-size: 2.2rem;
-  color: #004080;
-  margin-bottom: 20px;
+#divider-services-bottom {
+  background-color: var(--accent);
 }
 
-.section p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 30px;
-  color: #555;
+#divider-services-bottom svg {
+  transform: rotateY(180deg);
 }
 
 /* Cards de Serviço */
@@ -99,10 +158,11 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  padding-block: 20px;
 }
 
 .card {
-  background: white;
+  background: var(--secondary);
   padding: 20px;
   width: 250px;
   border-radius: 10px;
@@ -116,11 +176,27 @@ body {
 }
 
 .card h3 {
-  color: #fec600;
+  color: var(--primary);
   margin-bottom: 10px;
 }
+/* -------- services -------- */
 
-/* Clientes */
+/* -------- clients -------- */
+#clients {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#clients .content {
+  max-width: 900px;
+  margin: auto;
+}
+
+#clients .content p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .client-logos {
   display: flex;
   gap: 20px;
@@ -138,7 +214,24 @@ body {
   filter: grayscale(0%);
 }
 
-/* Estatísticas */
+/* -------- clients -------- */
+
+/* -------- results -------- */
+#results {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+}
+
+#divider-results-bottom {
+  background-color: var(--accent);
+}
+
+#results .content {
+  max-width: 900px;
+  margin: auto;
+}
+
 .results-stats {
   display: flex;
   gap: 40px;
@@ -155,3 +248,15 @@ body {
   font-size: 1rem;
   color: #333;
 }
+/* -------- results -------- */
+
+/* -------- contact -------- */
+#contact {
+  padding: 100px 20px;
+}
+
+#contact .content {
+  max-width: 900px;
+  margin: auto;
+}
+/* -------- contact -------- */
